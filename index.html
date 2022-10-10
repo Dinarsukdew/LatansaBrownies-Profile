@@ -2,426 +2,429 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Latansa Brownies &#x1F3E0;</title>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="headernya">
-      <nav>
-        <div class="logo">Latansa Brownies</div>
-        <!-- toggle menu button -->
-        <span class="menubtn" onclick="openNav()">&#9776;</span>
-
-        <div class="navLinks">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Product</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <button type="button">Login</button>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img style="width: 30px;" src="assets/images/logo2.jpg" alt="" /> Latansa Brownies</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
           </ul>
         </div>
-      </nav>
-
-      <!-- responsive side navbar -->
-
-      <div class="sideNav" id="sidenav">
-        <a href="#" class="closeBtn" onclick="closeNav()"> &#10006;</a>
-        <a href="#">Home</a>
-        <a href="#">Product</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-        <a href="#"><button type="button">Login</button> </a>
       </div>
+    </nav>
+    <header class="page-header gradient" style="background-image: url('assets/images/brownies.jpg'); ">
+      <div class="container pt-5 mt-5 px-5" >
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-5">
+            <h1>Brownies <br/> Shop</h1>
 
-      <!-- Header content with banner image -->
-      <div class="row">
-        <div class="column1">
-          <h1>Our Services</h1>
-          <p>Contact us for getting our services for your events!</p>
-          <button>PURCHASE</button>
-        </div>
-        <div class="column2-a">
-          <img class="img-circle" src="assets/images/brownies.jpg" alt="banner" width="400px" />
+            <p>
+              Jadikan harimu manis, semanis brownies <br/>
+              Feel the distinctive taste of <b>Latansa Brownies</b> on your tongue &#128522;	
+            </p>
+
+            <button type="button" class="btn btn-outline-success btn-lg">
+              Shop Now
+            </button>
+            <button type="button" class="btn btn-outline-warning btn-lg">
+              Play video
+            </button>
+          </div>
+          <div id="carouselExampleIndicators" class="col-md-5 carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" >
+                <img src="assets/images/4.JPG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/images/2.JPG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/images/3.JPG" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- <div class="col-md-5">
+            <img class="img-responsive justify-content-center" style="width: 250px;"
+              src="assets/images/1.JPG"
+              alt="Header image"
+            />
+          </div> -->
         </div>
       </div>
-    </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 250" >
+        <path
+          fill="#fff"
+          fill-opacity="1"
+          d="M0,128L48,117.3C96,107,192,85,288,80C384,75,480,85,576,112C672,139,768,181,864,181.3C960,181,1056,139,1152,122.7C1248,107,1344,117,1392,122.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </header>
 
-    <div class="product">
-      <div class="products">
-        <div class="container">
-          <h1 class="lg-title">Special Brownies With Offers</h1>
-          <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quos sit consectetur, ipsa voluptatem vitae necessitatibus dicta veniam, optio, possimus assumenda laudantium. Temporibus, quis cum.</p>
-
-          <div class="product-items">
-            <!-- single product -->
-            <div class="product">
-              <div class="product-content">
-                <div class="product-img">
-                  <img class="all-image" src="assets/images/8.JPG" alt="product image" />
-                </div>
-                <div class="product-btns">
-                  <button type="button" class="btn-cart">
-                    add to cart
-                    <span><i class="fas fa-plus"></i></span>
-                  </button>
-                  <button type="button" class="btn-buy">
-                    buy now
-                    <span><i class="fas fa-shopping-cart"></i></span>
-                  </button>
-                </div>
-              </div>
-
-              <div class="product-info">
-                <div class="product-info-top">
-                  <h2 class="sm-title">Birthday</h2>
-                  <div class="rating">
-                    <span><i class="fas fa-star"></i></span>
-                    <span><i class="fas fa-star"></i></span>
-                    <span><i class="fas fa-star"></i></span>
-                    <span><i class="fas fa-star"></i></span>
-                    <span><i class="far fa-star"></i></span>
-                  </div>
-                </div>
-                <a href="#" class="product-name">Brownies kukus matcha, new product</a>
-                <p class="product-price">$ 130.00</p>
-                <p class="product-price">$ 105.00</p>
-              </div>
-
-              <div class="off-info">
-                <h2 class="sm-title">25% off</h2>
-              </div>
-            </div>
-            <!-- end of single product -->
-            <!-- single product -->
-            <div class="product">
-              <div class="product-content">
-                <div class="product-img">
-                  <img class="all-image" src="assets/images/7.JPG" alt="product image" />
-                </div>
-                <div class="product-btns">
-                  <button type="button" class="btn-cart">
-                    add to cart
-                    <span><i class="fas fa-plus"></i></span>
-                  </button>
-                  <button type="button" class="btn-buy">
-                    buy now
-                    <span><i class="fas fa-shopping-cart"></i></span>
-                  </button>
-                </div>
-              </div>
-
-              <div class="product-info">
-                <div class="product-info-top">
-                  <h2 class="sm-title">Birthday</h2>
-                  <div class="rating">
-                    <span><i class="fas fa-star"></i></span>
-                    <span><i class="fas fa-star"></i></span>
-                    <span><i class="fas fa-star"></i></span>
-                    <span><i class="fas fa-star"></i></span>
-                    <span><i class="far fa-star"></i></span>
-                  </div>
-                </div>
-                <a href="#" class="product-name">Brownies kukus matcha, new product</a>
-                <p class="product-price">$ 150.00</p>
-                <p class="product-price">$ 133.00</p>
-              </div>
-            </div>
-            <!-- end of single product -->
-            <!-- single product -->
-            <div class="product">
-              <div class="product-content">
-                <div class="product-img">
-                  <img class="all-image" src="assets/images/1.JPG" alt="product image" />
-                </div>
-                <div class="product-btns">
-                  <button type="button" class="btn-cart">
-                    add to cart
-                    <span><i class="fas fa-plus"></i></span>
-                  </button>
-                  <button type="button" class="btn-buy">
-                    buy now
-                    <span><i class="fas fa-shopping-cart"></i></span>
-                  </button>
-                </div>
-              </div>
-
-              <div class="product-info">
-                <div class="product-info-top">
-                  <h2 class="sm-title">Birthday</h2>
-                  <div class="rating">
-                    <span><i class="fas fa-star"></i></span>
-                    <span><i class="fas fa-star"></i></span>
-                    <span><i class="fas fa-star"></i></span>
-                    <span><i class="fas fa-star"></i></span>
-                    <span><i class="far fa-star"></i></span>
-                  </div>
-                </div>
-                <a href="#" class="product-name">Brownies kukus matcha, new product</a>
-                <p class="product-price">$ 150.00</p>
-                <p class="product-price">$ 133.00</p>
-              </div>
-            </div>
-            <!-- end of single product -->
-            <!-- single product -->
-            <div class="product">
-              <div class="product-content">
-                <div class="product-img">
-                  <img class="all-image" src="assets/images/2.JPG" alt="product image" />
-                </div>
-                <div class="product-btns">
-                  <button type="button" class="btn-cart">
-                    add to cart
-                    <span><i class="fas fa-plus"></i></span>
-                  </button>
-                  <button type="button" class="btn-buy">
-                    buy now
-                    <span><i class="fas fa-shopping-cart"></i></span>
-                  </button>
-                </div>
-              </div>
-
-              <div class="product-info">
-                <div class="product-info-top">
-                  <h2 class="sm-title">Birthday</h2>
-                  <div class="rating">
-                    <span><i class="fas fa-star"></i></span>
-                    <span><i class="fas fa-star"></i></span>
-                    <span><i class="fas fa-star"></i></span>
-                    <span><i class="fas fa-star"></i></span>
-                    <span><i class="far fa-star"></i></span>
-                  </div>
-                </div>
-                <a href="#" class="product-name">Brownies kukus matcha, new product</a>
-                <p class="product-price">$ 150.00</p>
-                <p class="product-price">$ 133.00</p>
-              </div>
-
-              <div class="off-info">
-                <h2 class="sm-title">25% off</h2>
-              </div>
-            </div>
-            <!-- end of single product -->
-            <!-- single product -->
-            <div class="product">
-              <div class="product-content">
-                <div class="product-img">
-                  <img class="all-image" src="assets/images/3.JPG" alt="product image" />
-                </div>
-                <div class="product-btns">
-                  <button type="button" class="btn-cart">
-                    add to cart
-                    <span><i class="fas fa-plus"></i></span>
-                  </button>
-                  <button type="button" class="btn-buy">
-                    buy now
-                    <span><i class="fas fa-shopping-cart"></i></span>
-                  </button>
-                </div>
-              </div>
-
-              <div class="product-info">
-                <div class="product-info-top">
-                  <h2 class="sm-title">Birthday</h2>
-                  <div class="rating">
-                    <span><i class="fas fa-star"></i></span>
-                    <span><i class="fas fa-star"></i></span>
-                    <span><i class="fas fa-star"></i></span>
-                    <span><i class="fas fa-star"></i></span>
-                    <span><i class="far fa-star"></i></span>
-                  </div>
-                </div>
-                <a href="#" class="product-name">Brownies kukus matcha, new product</a>
-                <p class="product-price">$ 150.00</p>
-                <p class="product-price">$ 133.00</p>
-              </div>
-            </div>
-            <!-- end of single product -->
-            <!-- single product -->
-            <div class="product">
-              <div class="product-content">
-                <div class="product-img">
-                  <img class="all-image" src="assets/images/4.JPG" alt="product image" />
-                </div>
-                <div class="product-btns">
-                  <button type="button" class="btn-cart">
-                    add to cart
-                    <span><i class="fas fa-plus"></i></span>
-                  </button>
-                  <button type="button" class="btn-buy">
-                    buy now
-                    <span><i class="fas fa-shopping-cart"></i></span>
-                  </button>
-                </div>
-              </div>
-
-              <div class="product-info">
-                <div class="product-info-top">
-                  <h2 class="sm-title">Birthday</h2>
-                  <div class="rating">
-                    <span><i class="fas fa-star"></i></span>
-                    <span><i class="fas fa-star"></i></span>
-                    <span><i class="fas fa-star"></i></span>
-                    <span><i class="fas fa-star"></i></span>
-                    <span><i class="far fa-star"></i></span>
-                  </div>
-                </div>
-                <a href="#" class="product-name">Brownies kukus matcha, new product</a>
-                <p class="product-price">$ 150.00</p>
-                <p class="product-price">$ 133.00</p>
-              </div>
-            </div>
-            <!-- end of single product -->
-            <!-- single product -->
-            <div class="product">
-              <div class="product-content">
-                <div class="product-img">
-                  <img class="all-image" src="assets/images/5.JPG" alt="product image" />
-                </div>
-                <div class="product-btns">
-                  <button type="button" class="btn-cart">
-                    add to cart
-                    <span><i class="fas fa-plus"></i></span>
-                  </button>
-                  <button type="button" class="btn-buy">
-                    buy now
-                    <span><i class="fas fa-shopping-cart"></i></span>
-                  </button>
-                </div>
-              </div>
-
-              <div class="product-info">
-                <div class="product-info-top">
-                  <h2 class="sm-title">lifestyle</h2>
-                  <div class="rating">
-                    <span><i class="fas fa-star"></i></span>
-                    <span><i class="fas fa-star"></i></span>
-                    <span><i class="fas fa-star"></i></span>
-                    <span><i class="fas fa-star"></i></span>
-                    <span><i class="far fa-star"></i></span>
-                  </div>
-                </div>
-                <a href="#" class="product-name">Brownies kukus matcha, new product</a>
-                <p class="product-price">$ 150.00</p>
-                <p class="product-price">$ 133.00</p>
-              </div>
-            </div>
-            <!-- end of single product -->
-            <!-- single product -->
-            <div class="product">
-              <div class="product-content">
-                <div class="product-img">
-                  <img class="all-image" src="assets/images/6.JPG" alt="product image" />
-                </div>
-                <div class="product-btns">
-                  <button type="button" class="btn-cart">
-                    add to cart
-                    <span><i class="fas fa-plus"></i></span>
-                  </button>
-                  <button type="button" class="btn-buy">
-                    buy now
-                    <span><i class="fas fa-shopping-cart"></i></span>
-                  </button>
-                </div>
-              </div>
-
-              <div class="product-info">
-                <div class="product-info-top">
-                  <h2 class="sm-title">Birthday</h2>
-                  <div class="rating">
-                    <span><i class="fas fa-star"></i></span>
-                    <span><i class="fas fa-star"></i></span>
-                    <span><i class="fas fa-star"></i></span>
-                    <span><i class="fas fa-star"></i></span>
-                    <span><i class="far fa-star"></i></span>
-                  </div>
-                </div>
-                <a href="#" class="product-name">Brownies kukus matcha, new product</a>
-                <p class="product-price">$ 150.00</p>
-                <p class="product-price">$ 133.00</p>
-              </div>
-
-              <div class="off-info">
-                <h2 class="sm-title">35% off</h2>
-              </div>
-            </div>
-            <!-- end of single product -->
+    <section class="companies">
+      <div class="container text-center">
+        <div class="row g-5">
+          <div class="col-md-2">
+            <img
+              src="assets/images/8.JPG"
+              alt="Company logo"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-md-2">
+            <img
+              src="assets/images/8.JPG"
+              alt="Company logo"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-md-2">
+            <img
+              src="assets/images/8.JPG"
+              alt="Company logo"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-md-2">
+            <img
+              src="assets/images/8.JPG"
+              alt="Company logo"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-md-2">
+            <img
+              src="assets/images/8.JPG"
+              alt="Company logo"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-md-2">
+            <img
+              src="assets/images/8.JPG"
+              alt="Company logo"
+              class="img-fluid"
+            />
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="product-collection">
-        <div class="container">
-          <div class="product-collection-wrapper">
-            <!-- product col left -->
-            <div class="product-col-left flex">
-              <div class="product-col-content">
-                <h2 class="sm-title">Character Cake</h2>
-                <h2 class="md-title">Character Cake collection</h2>
-                <p class="text-light">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae consequatur facilis eligendi quibusdam voluptatibus exercitationem autem voluptatum, beatae architecto odit, quisquam repellat. Deleniti, architecto ab.
-                </p>
-                <button type="button" class="btn-dark">Shop now</button>
-              </div>
-            </div>
+    <section class="feature gradient" style="background-image: url('assets/images/brownies.jpg');">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#fff"
+          fill-opacity="1"
+          d="M0,224L48,213.3C96,203,192,181,288,154.7C384,128,480,96,576,117.3C672,139,768,213,864,208C960,203,1056,117,1152,101.3C1248,85,1344,139,1392,165.3L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+        ></path>
+      </svg>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <img src="img/seo_monochromatic.svg" alt="" />
+          </div>
 
-            <!-- product col right -->
-            <div class="product-col-right">
-              <div class="product-col-r-top flex">
-                <div class="product-col-content">
-                  <h2 class="sm-title">Kids Cake</h2>
-                  <h2 class="md-title">Kids Cake collection</h2>
-                  <p class="text-light">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae consequatur facilis eligendi quibusdam voluptatibus exercitationem autem voluptatum, beatae architecto odit, quisquam repellat. Deleniti, architecto ab.
-                  </p>
-                  <button type="button" class="btn-dark">Shop now</button>
-                </div>
-              </div>
-
-              <div class="product-col-r-bottom">
-                <!-- left -->
-                <div class="flex">
-                  <div class="product-col-content">
-                    <h2 class="sm-title">summer sale</h2>
-                    <h2 class="md-title">Extra 50% Off</h2>
-                    <p class="text-light">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae consequatur facilis eligendi quibusdam voluptatibus exercitationem autem voluptatum, beatae architecto odit, quisquam repellat. Deleniti, architecto
-                      ab.
-                    </p>
-                    <button type="button" class="btn-dark">Shop now</button>
-                  </div>
-                </div>
-                <!-- right -->
-                <div class="flex">
-                  <div class="product-col-content">
-                    <h2 class="sm-title">Brownies</h2>
-                    <h2 class="md-title">best sellers</h2>
-                    <p class="text-light">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae consequatur facilis eligendi quibusdam voluptatibus exercitationem autem voluptatum, beatae architecto odit, quisquam repellat. Deleniti, architecto
-                      ab.
-                    </p>
-                    <button type="button" class="btn-dark">Shop now</button>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="col-md-">
+            <h1 class="my-3">Introducing of Latansa Brownies</h1>
+            <p class="my-4">
+              Latansa Brownies merupakan salah satu toko kue brownies di Lumajang yang memiliki cita rasa kue brownies yang khas.
+              Latansa yang artinya <em>Jangan Lupa</em>. Jadi jangan lupa untuk mencicipi cita rasa brownies unik Latansa Brownies.
+            </p>
+            <ul>
+              <li>Best for Creative Agency</li>
+              <li>Built with Latest Technology</li>
+              <li>Super Responsive</li>
+              <li>Creative Design</li>
+            </ul>
           </div>
         </div>
       </div>
-      <footer class="footer">
-        <p>Created with blood and tears by <strong>WP-2</strong></p>
-      </footer>
-    </div>
-    <!-- javascript to make side menu appear -->
-    <script>
-      function openNav() {
-        document.getElementById("sidenav").style.width = "50%";
-      }
-      function closeNav() {
-        document.getElementById("sidenav").style.width = "0%";
-      }
-    </script>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#fff"
+          fill-opacity="1"
+          d="M0,224L48,213.3C96,203,192,181,288,154.7C384,128,480,96,576,117.3C672,139,768,213,864,208C960,203,1056,117,1152,101.3C1248,85,1344,139,1392,165.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <section class="icons">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-4">
+            <div class="icon gradient mb-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-layers"
+              >
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+            </div>
+            <h3>Built for developers</h3>
+            <p>
+              Our customizable, block-based build system makes creating your
+              next project fast and easy!
+            </p>
+          </div>
+          <div class="col-md-4">
+            <div class="icon gradient mb-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-smartphone"
+              >
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                <line x1="12" y1="18" x2="12.01" y2="18"></line>
+              </svg>
+            </div>
+            <h3>Modern responsive design</h3>
+            <p class="mb-0">
+              Featuring carefully crafted, mobile-first components, your end
+              product will function beautifully on any device!
+            </p>
+          </div>
+          <div class="col-md-4">
+            <div class="icon gradient mb-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-code"
+              >
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <h3>Complete documentation</h3>
+            <p class="mb-0">
+              All of the layouts, page sections, components, and utilities are
+              fully covered in this products docs.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery" >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 160">
+        <path
+          fill="#fff"
+          fill-opacity="1"
+          d="M0,128L120,128C240,128,480,128,720,122.7C960,117,1200,107,1320,101.3L1440,96L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"
+        ></path>
+      </svg>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10">
+            <h1>Lihat karya kreatif keren terbaru kami</h1>
+            <p>
+              Di dapur Latansa Brownies, kami memberikan sentuhan tren desain terbaru & dipadukan dengan semua
+              pendekatan modern. Merupakan karya inovatif yang kami kembangkan berdasarkan minat customer
+            </p>
+          </div>
+        </div>
+        <div class="row my-3 g-3">
+          <div class="col-md-4">
+            <img src="assets/images/teamwork.png" alt="Gallery image" class="img-fluid" />
+          </div>
+          <div class="col-md-4">
+            <img src="assets/images/teamwork2.png" alt="Gallery image" class="img-fluid" />
+          </div>
+          <div class="col-md-4">
+            <img src="assets/images/teamwork3.png" alt="Gallery image" class="img-fluid" />
+          </div>
+        </div>
+        <div class="row mt-5 justify-content-end">
+          <div class="col-md-2">
+            <button type="button" class="btn btn-outline-secondary">
+              See all works
+            </button>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#fff"
+          fill-opacity="1"
+          d="M0,128L120,128C240,128,480,128,720,122.7C960,117,1200,107,1320,101.3L1440,96L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+
+    <section class="services gradient">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220">
+        <path
+          fill="#fff"
+          fill-opacity="1"
+          d="M0,96L34.3,106.7C68.6,117,137,139,206,122.7C274.3,107,343,53,411,53.3C480,53,549,107,617,117.3C685.7,128,754,96,823,96C891.4,96,960,128,1029,154.7C1097.1,181,1166,203,1234,202.7C1302.9,203,1371,181,1406,170.7L1440,160L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"
+        ></path>
+      </svg>
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-5">
+            <button type="button" class="btn btn-outline-warning mb-3">
+              Coding
+            </button>
+
+            <h1>We code.</h1>
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Delectus, tempore placeat corrupti enim, cumque ex? Mollitia nihil
+              sint cumque omnis iure nisi.
+            </p>
+          </div>
+          <div class="col-md-5"><img src="assets/images/5.JPG" style="width: 200px;"alt="" /></div>
+          <div class="col-md-5"><img src="assets/images/5.JPG" style="width: 200px;"alt="" /></div>
+          <div class="col-md-5">
+            <button type="button " class="btn btn-outline-success mb-3">
+              Marketing
+            </button>
+
+            <h1>We promote.</h1>
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Delectus, tempore placeat corrupti enim, cumque ex? Mollitia nihil
+              sint cumque omnis iure nisi.
+            </p>
+          </div>
+          <div class="col-md-5">
+            <button type="button" class="btn btn-outline-light mb-3">
+              Selling
+            </button>
+
+            <h1>We sell.</h1>
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Delectus, tempore placeat corrupti enim, cumque ex? Mollitia nihil
+              sint cumque omnis iure nisi.
+            </p>
+          </div>
+          <div class="col-md-5"><img src="assets/images/5.JPG" style="width: 200px;"alt="" /></div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 210">
+        <path
+          fill="#fff"
+          fill-opacity="1"
+          d="M0,96L34.3,106.7C68.6,117,137,139,206,122.7C274.3,107,343,53,411,53.3C480,53,549,107,617,117.3C685.7,128,754,96,823,96C891.4,96,960,128,1029,154.7C1097.1,181,1166,203,1234,202.7C1302.9,203,1371,181,1406,170.7L1440,160L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+
+    <section class="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <h1>Contact us:</h1>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="name@example.com"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Example textarea</label
+              >
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              ></textarea>
+            </div>
+            <button type="button" class="btn btn-outline-secondary">
+              Send
+            </button>
+          </div>
+          <div class="col-md-5">
+            <img src="assets/images/5.JPG" style="width: 200px;" alt="Contact image" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="gradient">
+      <div class="container-fluid text-center">
+        <span
+          >Made with WP-2</span>
+      </div>
+    </footer>
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
