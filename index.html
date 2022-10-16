@@ -4,50 +4,58 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Latansa Brownies</title>
+    <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet" />
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#"><img style="width: 30px" src="assets/images/logo2.jpg" alt="" /> Latansa Brownies</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Product</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
-            </li>
-          </ul>
-        </div>
+
+    <div id="klik_button_react" >
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+          <a href="#" class="navbar-brand">&#x1F382; Latansa Brownies</a>
+          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+              <div class="navbar-nav">
+                  <a href="#Home" class="nav-item nav-link ">Home</a>
+                  <a href="#Product" class="nav-item nav-link">Product</a>
+                  <a href="#services" class="nav-item nav-link">Services</a>
+                  <a href="#aboutus" class="nav-item nav-link" tabindex="-1">About Us</a>
+              </div>
+              <!-- <div class="navbar-nav ms-auto">
+                  <a href="#" class="nav-item nav-link">Login</a>
+              </div> -->
+          </div>
       </div>
-    </nav>
-    <header class="page-header gradient" style="background-color: rgb(255, 228, 225)">
+  </nav>
+</div>
+    <header class="page-header gradient" id="Home" 
+    style="background-image: url('assets/images/assortment-pieces-cake.jpg'); 
+    background-repeat: no-repeat;background-position: 60% 30%;
+    background-attachment: scroll;">
       <svg>
         <circle cx="100" cy="0" r="150" stroke="#e6e6ff" fill="#e6e6ff" />
       </svg>
-      <div class="container pt-5 mt-5 px-1">
+      <div class="container pt-5 mt-1 px-1">
         <div class="row align-items-center justify-content-center">
           <div class="col-md-5">
-            <h1>
-              Brownies <br />
-              Shop
-            </h1>
-
-            <p>
+            <p style="font-size: 70px;" >
+              <b>Brownies <br />
+              Shop</b>
+              </p>
+            <br/>
+            <br/> 
+           
+            <p >
               Jadikan harimu manis, semanis brownies <br />
-              Feel the distinctive taste of <b>Latansa Brownies</b> on your tongue &#128522;
+              Feel the distinctive taste of <b>Latansa Brownies</b> <br/>on your tongue &#128522;
             </p>
             <a aria-label="Chat on WhatsApp" target="_blank" href="https://wa.me/+6285730050565/?text=Halo%20Kak!%20Saya%20mau%20pesan%20Latansa%20Brownies..">
               <button type="button" class="btn btn-outline-success btn-lg">Pesan Sekarang</button>
@@ -58,9 +66,11 @@
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
             </div>
             <div class="carousel-inner">
-              <div class="carousel-item active">
+              <div class="carousel-item active" >
                 <img src="assets/images/8.JPG" class="d-block w-100 rounded" alt="..." />
               </div>
               <div class="carousel-item">
@@ -68,6 +78,12 @@
               </div>
               <div class="carousel-item">
                 <img src="assets/images/3.JPG" class="d-block w-100 rounded" alt="..." />
+              </div>
+              <div class="carousel-item ">
+                <img src="assets/images/4.JPG" class="d-block w-100 rounded" alt="..." />
+              </div>
+              <div class="carousel-item active">
+                <img src="assets/images/7.JPG" class="d-block w-100 rounded" alt="..." />
               </div>
             </div>
             <svg width="100" height="100">
@@ -102,49 +118,61 @@
       </svg>
     </header>
 
-    <section class="companies">
+    <style>
+      .figure{
+        border-radius: 20px 40px 60px;
+        background-image: url('assets/images/background.jpeg');
+        padding: 10px;
+        text-align: center;
+        /* width: 300px;
+        height: 120px; */
+
+      }
+    </style>
+    <section class="companies" id="Product">
       <div class="container text-center">
         <div class="row g-5">
           <div class="col-md-2">
             <figure class="figure">
-              <img src="assets/images/5.JPG" class="figure-img img-fluid rounded-circle" alt="..." />
+              <img src="assets/images/9.jpg" class="figure-img img-fluid rounded-circle " alt="..." />
               <figcaption class="figure-caption text-center">A caption for the above image.</figcaption>
             </figure>
           </div>
           <div class="col-md-2">
             <figure class="figure">
-              <img src="assets/images/5.JPG" class="figure-img img-fluid rounded-circle" alt="..." />
+              <img src="assets/images/10.jpg" class="figure-img img-fluid rounded-circle " alt="..." />
               <figcaption class="figure-caption text-center">A caption for the above image.</figcaption>
             </figure>
           </div>
           <div class="col-md-2">
             <figure class="figure">
-              <img src="assets/images/5.JPG" class="figure-img img-fluid rounded-circle" alt="..." />
+              <img src="assets/images/11.jpg" class="figure-img img-fluid rounded-circle " alt="..." />
               <figcaption class="figure-caption text-center">A caption for the above image.</figcaption>
             </figure>
           </div>
           <div class="col-md-2">
             <figure class="figure">
-              <img src="assets/images/5.JPG" class="figure-img img-fluid rounded-circle" alt="..." />
+              <img src="assets/images/12.jpg" class="figure-img img-fluid rounded-circle " alt="..." />
               <figcaption class="figure-caption text-center">A caption for the above image.</figcaption>
             </figure>
           </div>
           <div class="col-md-2">
             <figure class="figure">
-              <img src="assets/images/5.JPG" class="figure-img img-fluid rounded-circle" alt="..." />
+              <img src="assets/images/13.jpg" class="figure-img img-fluid rounded-circle " alt="..." />
               <figcaption class="figure-caption text-center">A caption for the above image.</figcaption>
             </figure>
           </div>
           <div class="col-md-2">
             <figure class="figure">
-              <img src="assets/images/5.JPG" class="figure-img img-fluid rounded-circle" alt="..." />
+              <img src="assets/images/14.jpg" class="figure-img img-fluid rounded-circle" alt="..." />
               <figcaption class="figure-caption text-center">A caption for the above image.</figcaption>
             </figure>
           </div>
         </div>
       </div>
     </section>
-    <section class="feature gradient" style="background-color: rgb(255, 228, 225)">
+    <div id="services">
+    <section class="feature gradient"  style="background-color: rgb(255, 228, 225)">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#fff"
@@ -222,6 +250,7 @@
         </div>
       </div>
     </section>
+  </div>
 
     <section class="gallery" style="background-color: rgb(230, 230, 250)">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 160">
@@ -245,11 +274,11 @@
             <img src="assets/images/teamwork3.png" alt="Gallery image" class="img-fluid" />
           </div>
         </div>
-        <div class="row mt-5 justify-content-end">
+        <!-- <div class="row mt-5 justify-content-end">
           <div class="col-md-2">
             <button type="button" class="btn btn-outline-secondary">See all works</button>
           </div>
-        </div>
+        </div> -->
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="background-color: rgb(rgb(176, 196, 222))">
         <path fill="#fff" fill-opacity="1" d="M0,128L120,128C240,128,480,128,720,122.7C960,117,1200,107,1320,101.3L1440,96L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
@@ -259,7 +288,7 @@
       </svg>
     </section>
 
-    <section class="services gradient">
+    <section class="services gradient" style="background-image: url('assets/images/assortment-pieces-cake.jpg');" >
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 20 1440 220">
         <path
           fill="#fff"
@@ -280,8 +309,8 @@
 
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, tempore placeat corrupti enim, cumque ex? Mollitia nihil sint cumque omnis iure nisi.</p>
           </div>
-          <div class="col-md-5 rounded"><img src="assets/images/8.JPG" style="width: 400px" alt="" /></div>
-          <div class="col-md-5 rounded"><img src="assets/images/2.JPG" style="width: 400px" alt="" /></div>
+          <div class="col-md-5 rounded"><img src="assets/images/8.JPG" style="width: 400px; border-radius: 20px 40px 60px; margin: 10px" alt="" /></div>
+          <div class="col-md-5 rounded"><img src="assets/images/2.JPG" style="width: 400px; border-radius: 20px 40px 60px; margin: 10px;" alt="" /></div>
           <div class="col-md-5">
             <button type="button " class="btn btn-outline-success mb-3">Brownies</button>
 
@@ -296,11 +325,12 @@
 
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, tempore placeat corrupti enim, cumque ex? Mollitia nihil sint cumque omnis iure nisi.</p>
           </div>
-          <div class="col-md-5 rounded-circle"><img src="assets/images/1.JPG" style="width: 400px" alt="" /></div>
+          <div class="col-md-5 rounded-circle"><img src="assets/images/1.JPG" style="width: 400px; border-radius: 20px 40px 60px; margin: 10px;
+            " alt="" /></div>
         </div>
       </div>
     </section>
-    <section class="contact" style="background-color: rgb(230, 230, 250)">
+    <section class="contact" id="aboutus" style="background-color: rgb(230, 230, 250)">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 20 1440 220">
         <path
           fill="#fff"
@@ -322,17 +352,18 @@
             </div>
             <button type="button" class="btn btn-outline-secondary">Send</button>
           </div>
-          <div class="col-md-5 justify-content-center">
-            <div class="row my-3 g-3">
-              <div class="col-md-4 text-center">
-                <h4>judul</h4>
-                <p>alamat</p>
+          <div class="col-md-6" >
+              <h4>Alamat Toko</h4>
+              <p>Jalan Semeru No. 24a, RT. 002 RW. 017
+                Kec. Lumajang, Kabupaten Lumajang <br/>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                  <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                </svg>
+               <a href="https://wa.me/+6285730050565/?text=Halo%20Kak!%20Saya%20mau%20pesan%20Latansa%20Brownies.." target="_blank">089697106115</a>
+               </p>
+              <div class="container" >
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d505762.7791181957!2d112.36034586607146!3d-7.970846203747516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sJalan%20Semeru%20No.%2024a%2C%20RT.%20002%20RW.%20017%20%20Kec.%20Lumajang%2C%20Kabupaten%20Lumajang!5e0!3m2!1sid!2sid!4v1665892166481!5m2!1sid!2sid" width="750" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
-              <div class="col-md-4">
-                <h4>judul</h4>
-                <p>motonya</p>
-              </div>
-            </div>
           </div>
           <!-- <div class="col-md-5 justify-content-center rounded">
             <img src="assets/images/teamwork4.png" role="img" style="width: 400px;" alt="Contact image" />
@@ -345,14 +376,8 @@
         </div>
       </footer>
     </section>
-
-    <!-- 
-    <footer class="gradient">
-      <div class="container-fluid text-center">
-        <span
-          >Made with WP-2</span>
-      </div>
-    </footer> -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Our Script -->
   </body>
 </html>
